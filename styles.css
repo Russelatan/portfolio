@@ -1,0 +1,228 @@
+* {
+  font-family: 'Segoe UI';
+  user-select: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  
+  overflow-x: hidden;
+  
+}
+
+body > img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(0.5);
+  z-index: -1;
+}
+
+header {
+  position: fixed;
+  height: 15vh;
+  width: 100vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  background: linear-gradient(to bottom, #0b0b0bcd 85%, #0b0b0b00);
+  color: aliceblue;
+  z-index: 2;
+}
+
+nav {
+  height: 10vh;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: transparent;
+  color: aliceblue;
+  /* border: solid cyan 1px; */
+}
+
+header > div {
+  height: 10vh;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  background-color: transparent;
+  color: aliceblue;
+  font-size: 1.2rem;
+  /* border: solid cyan 1px; */
+}
+
+main {
+  height: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  background-color: transparent;
+  place-items: center;
+  overflow: hidden;
+  /* border: solid rgb(0, 213, 255) 1px; */
+}
+
+main > div {
+  
+  width: 75vw;
+  /* border: solid cyan 1px; */
+  background-color: #171717ac;
+  padding: 3vw;
+  color: aliceblue;
+  font-size: 1.5em;
+}
+
+main > div:first-of-type {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  height: 20vh;
+  margin-top: -5vh;
+  margin-bottom: 50vh;
+  border-radius: 2vw 15vw 2vw 2vw;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  text-align: justify;
+}
+
+main > div:first-of-type > img {
+  border-radius: 100%;
+  height: auto;
+  width: auto;
+  min-width: 25rem;
+  min-height: 25rem;
+  max-width: 25rem;
+  max-height: 25rem;
+  /* opacity: 0.3; */
+  transition: all 0.5s ease-in-out;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+}
+
+main > div:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: auto;
+  min-height: 10vh;
+  margin-top: 25vh;
+  margin-bottom: 50vh;
+  border-radius: 2vw;
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  gap: 5vh;
+  /* border: solid cyan 1px; */
+}
+
+
+.projects {
+  display: grid; /* Enable grid layout */
+  grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
+  grid-gap: 10px; /* Optional: space between items */
+  padding: 20px; /* Optional: padding around the container */
+  place-items: center;
+}
+
+.projects > article{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 80%;
+  height: 60vh;
+  border-radius: 20px;
+  background-color: #252323;
+  /* border: solid cyan 1px; */
+  overflow: hidden;
+  box-shadow: 0px 0px 5px aliceblue;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.projects > article:hover{
+  transform: scale(1.05);
+  box-shadow: 0px 0px 20px aliceblue;
+}
+
+.projects article > div{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  border-radius: 0px 0px 20px 20px;
+  /* border: solid rgb(255, 85, 0) 1px; */
+  background: linear-gradient(to bottom, rgb(34, 34, 34) 5%, rgb(1, 1, 1) 95%);
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  font-size: 0.7em;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.projects article > div > div:first-of-type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+
+}
+
+.projects article > div > div:nth-of-type(2){
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: justify;
+  width: 100%;
+  height: 80%;
+
+}
+
+.projects article > video, .projects article > img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+
+footer {
+  height: 35vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-evenly;
+  align-items: center;
+  background: linear-gradient(to top, #0b0b0bf3 90%, #0b0b0b00);
+  color: aliceblue;
+ 
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+footer > div img{
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+footer > div img:hover{
+  transform: scale(1.2);
+}

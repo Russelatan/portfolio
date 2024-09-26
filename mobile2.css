@@ -1,0 +1,380 @@
+@media (max-width: 1200px) {
+  main {
+    grid-template-rows: repeat(1, 1fr); 
+  }
+
+  .projects > article {
+    width: 45%; 
+  }
+}
+
+@media (max-width: 1000px) {
+  * {
+    font-family: 'Segoe UI';
+    user-select: none;
+  }
+
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    
+    overflow-x: hidden;
+    
+  }
+  
+  body > img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+  
+  header {
+    position: fixed;
+    height: 20vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #0b0b0bea 85%, #0b0b0b00);
+    color: aliceblue;
+    z-index: 2;
+  }
+  
+  nav {
+    height: 50%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: transparent;
+    color: aliceblue;
+    /* border: solid cyan 1px; */
+  }
+
+  header > div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: aliceblue;
+    /* border: solid cyan 1px; */
+  }
+
+  header > div > div{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: aliceblue;
+    /* border: solid cyan 1px; */
+  }
+  
+  main {
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    overflow: hidden;
+    /* border: solid rgb(0, 213, 255) 1px; */
+  }
+  
+  main > div {
+    
+    width: 80vw;
+    /* border: solid cyan 1px; */
+    background-color: #171717ac;
+    padding: 3vw;
+    color: aliceblue;
+    font-size: 1.5em;
+  }
+  
+  main > div:first-of-type {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: auto;
+    margin-top: 40vh;
+    border-radius: 2vw 15vw 2vw 2vw;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    text-align: justify;
+    font-size: 0.8em;
+  }
+  
+  main > div:first-of-type > img {
+    border-radius: 100%;
+    height: auto;
+    width: auto;
+    min-width: 8rem;
+    min-height: 8rem;
+    max-width: 8rem;
+    max-height: 8rem;
+    /* opacity: 0.3; */
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  }
+
+  main > div:first-of-type > div {
+    width: 50%;
+  }
+  
+  main > div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    margin-bottom: 50vh;
+    border-radius: 2vw;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0);
+    gap: 5vh;
+    /* border: solid rgb(0, 255, 26) 1px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 1em;
+  }
+  
+  
+  .projects {
+    display: grid; /* Enable grid layout */
+    grid-template-columns: 1fr; /* Create three equal columns */
+    grid-gap: 10px; /* Optional: space between items */
+    padding: 20px; /* Optional: padding around the container */
+    place-items: center;
+
+  }
+  
+  .projects > article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    background-color: #252323;
+    /* border: solid cyan 1px; */
+    overflow: hidden;
+    box-shadow: 0px 0px 5px aliceblue;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .projects > article:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 20px aliceblue;
+  }
+
+  
+  
+  .projects article > div{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50%;
+    border-radius: 0px 0px 20px 20px;
+    /* border: solid rgb(255, 85, 0) 1px; */
+    background: linear-gradient(to bottom, rgb(34, 34, 34) 5%, rgb(1, 1, 1) 95%);
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    font-size: 1em;
+    padding: 20px;
+    overflow: hidden;
+  }
+  
+  .projects article > div > div:first-of-type{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+  
+  }
+  
+  .projects article > div > div:nth-of-type(2){
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    text-align: justify;
+    width: 100%;
+    height: 80%;
+  
+  }
+  
+  .shapeshooter > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .sinking_fund > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .weather > video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  footer {
+    height: 35vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    background: linear-gradient(to top, #0b0b0bf3 90%, #0b0b0b00);
+    color: aliceblue;
+  }
+  
+  footer > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  footer > a > img {
+    width: 30px;
+    height: 30px;
+  }
+
+
+
+
+
+
+
+
+
+  /* From Uiverse.io by eleventhday */ 
+  .fancy {
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 0;
+    box-sizing: border-box;
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 0.4em 1em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+    transition: all 0.3s ease-in-out;
+    user-select: none;
+    font-size: 10px;
+  }
+
+  .fancy::before {
+    content: " ";
+    width: auto;
+    min-width: 0.50rem;
+    height: 2px;
+    background: white;
+    top: 50%;
+    left: 1.5em;
+    position: absolute;
+    transform: translateY(-50%);
+    transform-origin: center;
+    transition: background 0.3s linear, width 0.3s linear;
+  }
+
+  .fancy .text {
+    font-size: 1.125em;
+    line-height: 1.33333em;
+    padding-left: 2em;
+    display: block;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+  }
+
+  .fancy .top-key {
+    height: 2px;
+    width: 1rem;
+    top: -2px;
+    left: 0.625rem;
+    position: absolute;
+    background: #212121;
+    transition: width 0.5s ease-out, left 0.3s ease-out;
+  }
+
+  .fancy .bottom-key-1 {
+    height: 2px;
+    width: 1.5625rem;
+    right: 1.875rem;
+    bottom: -2px;
+    position: absolute;
+    background: #212121;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+
+  .fancy .bottom-key-2 {
+    height: 2px;
+    width: 0.625rem;
+    right: 0.625rem;
+    bottom: -2px;
+    position: absolute;
+    background: #212121;
+    transition: width 0.5s ease-out, right 0.3s ease-out;
+  }
+
+  .fancy:hover {
+    color: white;
+    background: white;
+  }
+
+  .fancy:hover::before {
+    width: 0.50rem;
+    background: black;
+  }
+
+  .fancy:hover .text {
+    color: black;
+    padding-left: 1.5em;
+  }
+
+  .fancy:hover .top-key {
+    left: -2px;
+    width: 0px;
+  }
+
+  .fancy:hover .bottom-key-1,
+  .fancy:hover .bottom-key-2 {
+    right: 0;
+    width: 0;
+  }
+}
