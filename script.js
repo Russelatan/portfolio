@@ -36,3 +36,12 @@ document.querySelector('.sinking_fund').addEventListener('click', function() {
   
   window.open(url, '_blank');
 });
+
+document.querySelector('.weather').addEventListener('click', function() {
+  
+  const url = 'https://drive.google.com/drive/folders/1NXBpMEF3ApUjSTE5BtkG3q5ib05hAQp1?usp=sharing';
+  
+  window.open(url, '_blank');
+});
+
+
