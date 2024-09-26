@@ -162,7 +162,7 @@
   .projects {
     display: grid; /* Enable grid layout */
     grid-template-columns: 1fr; /* Create three equal columns */
-    grid-gap: 10px; /* Optional: space between items */
+    grid-gap: 50px; /* Optional: space between items */
     padding: 20px; /* Optional: padding around the container */
     place-items: center;
 
@@ -173,7 +173,7 @@
     flex-wrap: wrap;
     gap: 10px;
     width: 100%;
-    height: 90%;
+    height: 100%;
     border-radius: 20px;
     background-color: #252323;
     /* border: solid cyan 1px; */
@@ -225,21 +225,9 @@
   
   }
   
-  .shapeshooter > video{
+  .projects article > iframe, .projects article > img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .sinking_fund > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .weather > video{
-    width: 100%;
-    height: 100%;
+    height: 40%;
     object-fit: cover;
   }
   
