@@ -102,7 +102,7 @@
   
   main > div {
     
-    width: 80vw;
+    width: 60vw;
     /* border: solid cyan 1px; */
     background-color: #171717ac;
     padding: 3vw;
@@ -119,24 +119,24 @@
     border-radius: 2vw 15vw 2vw 2vw;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 1.1em;
   }
   
   main > div:first-of-type > img {
     border-radius: 100%;
     height: auto;
     width: auto;
-    min-width: 8rem;
-    min-height: 8rem;
-    max-width: 8rem;
-    max-height: 8rem;
+    min-width: 15rem;
+    min-height: 15rem;
+    max-width: 15rem;
+    max-height: 15rem;
     /* opacity: 0.3; */
     transition: all 0.5s ease-in-out;
     box-shadow: 0px 0px 20px rgb(0, 0, 0);
   }
 
   main > div:first-of-type > div {
-    width: 50%;
+    width: 35%;
   }
   
   main > div:nth-of-type(2) {
@@ -153,7 +153,7 @@
     /* border: solid rgb(0, 255, 26) 1px; */
     padding-top: 50px;
     padding-bottom: 50px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   
   
@@ -170,7 +170,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    width: 100%;
+    width: 80%;
     height: 90%;
     border-radius: 20px;
     background-color: #252323;
@@ -286,7 +286,7 @@
     margin: 0;
     outline: none;
     overflow: visible;
-    padding: 0.4em 1em;
+    padding: 1.5em 1.2em;
     position: relative;
     text-align: center;
     text-decoration: none;
